@@ -1,0 +1,26 @@
+PODS:
+  - CocoaAsyncSocket (7.4.2)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - wpxmlrpc (0.8.1)
+
+DEPENDENCIES:
+  - CocoaHTTPServer
+  - wpxmlrpc
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  wpxmlrpc: bd391dab54e9bdceb5d1de23d161ecf1ba80f0e0
+
+COCOAPODS: 0.39.0

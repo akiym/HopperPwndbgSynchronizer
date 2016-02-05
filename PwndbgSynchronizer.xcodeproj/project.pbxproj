@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07AC766718C8CB9A007D5414 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AC766618C8CB9A007D5414 /* CoreFoundation.framework */; };
+		07AC766D18C8CB9A007D5414 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AC766B18C8CB9A007D5414 /* InfoPlist.strings */; };
+		07AC767618C8CBC8007D5414 /* PwndbgSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AC767518C8CBC8007D5414 /* PwndbgSynchronizer.m */; };
+		07AC767918C8CED6007D5414 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AC767818C8CED6007D5414 /* Cocoa.framework */; };
+		4BDEBB2E579ADDBE2A4A4CBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0387CB43A31C534AE80F6C4D /* libPods.a */; };
+		AD04D7491C60EF9200CEA823 /* XMLRPCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD04D7481C60EF9200CEA823 /* XMLRPCServer.m */; };
+		AD9A560A1C60D70D00A09571 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A56091C60D70D00A09571 /* XMLRPCConnection.m */; };
+		AD9BE6A11C6104CE00D068CA /* HopperCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9BE6A01C6104CE00D068CA /* HopperCommands.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0387CB43A31C534AE80F6C4D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AC766318C8CB9A007D5414 /* PwndbgSynchronizer.hopperTool */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PwndbgSynchronizer.hopperTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AC766618C8CB9A007D5414 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		07AC766A18C8CB9A007D5414 /* PwndbgSynchronizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PwndbgSynchronizer-Info.plist"; sourceTree = "<group>"; };
+		07AC766C18C8CB9A007D5414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07AC766E18C8CB9A007D5414 /* PwndbgSynchronizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PwndbgSynchronizer-Prefix.pch"; sourceTree = "<group>"; };
+		07AC767418C8CBC8007D5414 /* PwndbgSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PwndbgSynchronizer.h; sourceTree = "<group>"; };
+		07AC767518C8CBC8007D5414 /* PwndbgSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PwndbgSynchronizer.m; sourceTree = "<group>"; };
+		07AC767818C8CED6007D5414 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3728C169CD6EE2C59FB51795 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5B68141699C3FA5690C79A26 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AD04D7471C60EF9200CEA823 /* XMLRPCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCServer.h; sourceTree = "<group>"; };
+		AD04D7481C60EF9200CEA823 /* XMLRPCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCServer.m; sourceTree = "<group>"; };
+		AD9A56081C60D70D00A09571 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnection.h; sourceTree = "<group>"; };
+		AD9A56091C60D70D00A09571 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCConnection.m; sourceTree = "<group>"; };
+		AD9BE69F1C6104CE00D068CA /* HopperCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HopperCommands.h; sourceTree = "<group>"; };
+		AD9BE6A01C6104CE00D068CA /* HopperCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HopperCommands.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AC766018C8CB9A007D5414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AC767918C8CED6007D5414 /* Cocoa.framework in Frameworks */,
+				07AC766718C8CB9A007D5414 /* CoreFoundation.framework in Frameworks */,
+				4BDEBB2E579ADDBE2A4A4CBC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AC765A18C8CB9A007D5414 = {
+			isa = PBXGroup;
+			children = (
+				07AC766818C8CB9A007D5414 /* PwndbgSynchronizer */,
+				07AC766918C8CB9A007D5414 /* Supporting Files */,
+				07AC766518C8CB9A007D5414 /* Frameworks */,
+				07AC766418C8CB9A007D5414 /* Products */,
+				F69A879B32BE7D255D1F5C07 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		07AC766418C8CB9A007D5414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AC766318C8CB9A007D5414 /* PwndbgSynchronizer.hopperTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AC766518C8CB9A007D5414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07AC767818C8CED6007D5414 /* Cocoa.framework */,
+				07AC766618C8CB9A007D5414 /* CoreFoundation.framework */,
+				0387CB43A31C534AE80F6C4D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07AC766818C8CB9A007D5414 /* PwndbgSynchronizer */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A56081C60D70D00A09571 /* XMLRPCConnection.h */,
+				AD9A56091C60D70D00A09571 /* XMLRPCConnection.m */,
+				07AC767418C8CBC8007D5414 /* PwndbgSynchronizer.h */,
+				07AC767518C8CBC8007D5414 /* PwndbgSynchronizer.m */,
+				AD04D7471C60EF9200CEA823 /* XMLRPCServer.h */,
+				AD04D7481C60EF9200CEA823 /* XMLRPCServer.m */,
+				AD9BE69F1C6104CE00D068CA /* HopperCommands.h */,
+				AD9BE6A01C6104CE00D068CA /* HopperCommands.m */,
+			);
+			name = PwndbgSynchronizer;
+			path = PwndbgSynchronizeLauncher;
+			sourceTree = "<group>";
+		};
+		07AC766918C8CB9A007D5414 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AC766A18C8CB9A007D5414 /* PwndbgSynchronizer-Info.plist */,
+				07AC766B18C8CB9A007D5414 /* InfoPlist.strings */,
+				07AC766E18C8CB9A007D5414 /* PwndbgSynchronizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = PwndbgSynchronizeLauncher;
+			sourceTree = "<group>";
+		};
+		F69A879B32BE7D255D1F5C07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B68141699C3FA5690C79A26 /* Pods.debug.xcconfig */,
+				3728C169CD6EE2C59FB51795 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AC766218C8CB9A007D5414 /* PwndbgSynchronizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AC767118C8CB9A007D5414 /* Build configuration list for PBXNativeTarget "PwndbgSynchronizer" */;
+			buildPhases = (
+				F4B57908D1F1ABA405A6899C /* Check Pods Manifest.lock */,
+				07AC765F18C8CB9A007D5414 /* Sources */,
+				07AC766018C8CB9A007D5414 /* Frameworks */,
+				07AC766118C8CB9A007D5414 /* Resources */,
+				07AC767718C8CBF4007D5414 /* Run Script (Installation) */,
+				107CDB27AF31B5DBA247D015 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PwndbgSynchronizer;
+			productName = PwndbgSynchronizeLauncher;
+			productReference = 07AC766318C8CB9A007D5414 /* PwndbgSynchronizer.hopperTool */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AC765B18C8CB9A007D5414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Cryptic Apps";
+			};
+			buildConfigurationList = 07AC765E18C8CB9A007D5414 /* Build configuration list for PBXProject "PwndbgSynchronizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07AC765A18C8CB9A007D5414;
+			productRefGroup = 07AC766418C8CB9A007D5414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AC766218C8CB9A007D5414 /* PwndbgSynchronizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AC766118C8CB9A007D5414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AC766D18C8CB9A007D5414 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07AC767718C8CBF4007D5414 /* Run Script (Installation) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (Installation)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf \"${INSTALL_PATH}/PwndbgSynchronizer.hopperTool\"\nmkdir -p \"${INSTALL_PATH}\"\ncp -rf \"${BUILT_PRODUCTS_DIR}/PwndbgSynchronizer.hopperTool\" \"${INSTALL_PATH}\"\n";
+		};
+		107CDB27AF31B5DBA247D015 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B57908D1F1ABA405A6899C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AC765F18C8CB9A007D5414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AC767618C8CBC8007D5414 /* PwndbgSynchronizer.m in Sources */,
+				AD9A560A1C60D70D00A09571 /* XMLRPCConnection.m in Sources */,
+				AD04D7491C60EF9200CEA823 /* XMLRPCServer.m in Sources */,
+				AD9BE6A11C6104CE00D068CA /* HopperCommands.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07AC766B18C8CB9A007D5414 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AC766C18C8CB9A007D5414 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AC766F18C8CB9A007D5414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		07AC767018C8CB9A007D5414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		07AC767218C8CB9A007D5414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B68141699C3FA5690C79A26 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PwndbgSynchronizeLauncher/PwndbgSynchronizer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
+				INFOPLIST_FILE = "PwndbgSynchronizeLauncher/PwndbgSynchronizer-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Application Support/Hopper/PlugIns/Tools";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptic-apps.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = PwndbgSynchronizer;
+				WRAPPER_EXTENSION = hopperTool;
+			};
+			name = Debug;
+		};
+		07AC767318C8CB9A007D5414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3728C169CD6EE2C59FB51795 /* Pods.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PwndbgSynchronizeLauncher/PwndbgSynchronizer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
+				INFOPLIST_FILE = "PwndbgSynchronizeLauncher/PwndbgSynchronizer-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Application Support/Hopper/PlugIns/Tools";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptic-apps.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = PwndbgSynchronizer;
+				WRAPPER_EXTENSION = hopperTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AC765E18C8CB9A007D5414 /* Build configuration list for PBXProject "PwndbgSynchronizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AC766F18C8CB9A007D5414 /* Debug */,
+				07AC767018C8CB9A007D5414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AC767118C8CB9A007D5414 /* Build configuration list for PBXNativeTarget "PwndbgSynchronizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AC767218C8CB9A007D5414 /* Debug */,
+				07AC767318C8CB9A007D5414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AC765B18C8CB9A007D5414 /* Project object */;
+}
